@@ -32,14 +32,6 @@ canvas {
 	height: 100%;
 }
 
-a {
-	position: absolute;
-	bottom: 2vmin;
-	right: 2vmin;
-	color: rgba(255, 255, 255, 0.2);
-	text-decoration: none;
-}
-
 	a:hover {
 		color: #fff;
 	}
@@ -109,7 +101,7 @@ header {
 
 .aboutMe {
 	background-color:#333333;
-	margin: 3em 0;
+	margin: 0;
 	padding: 30px;
 	font-size: 1.2em;
 }
@@ -125,6 +117,8 @@ header {
 /* Timeline styling */
 .timelineLabel {
 	text-align: center;
+	margin: 0;
+	padding: 1em;
 }
 
 .timeline {
@@ -255,17 +249,17 @@ figure {
 
 /* Footer styling */
 footer {
-	margin: 30px;
+	margin: 0px;
 	text-align: left;
-	font-size: 1em;
+	font-size: 1.2em;
 	bottom: 0;
 	right: 0;
 	left: 0;
-	padding: 0px 20px 20px 20px;
+	padding: 30px 120px 15px 120px;
 }
 
 
 footer p {
-	margin-bottom:-2.5em;
 	position:relative;
+	margin: 0px;
 }
