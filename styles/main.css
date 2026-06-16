@@ -32,9 +32,9 @@ canvas {
 	height: 100%;
 }
 
-	a:hover {
-		color: #fff;
-	}
+a:hover {
+	color: #fff;
+}
 
 
 
@@ -126,15 +126,19 @@ header {
 	background-color: white;
 	padding-top: 0.01px;
 	padding-bottom: 1px;
+	position: relative;
 }
 
-.verticalLine {
-	border-left: 6px solid black;
+.timeline::before {
+	background-image: linear-gradient(180deg, #fff 0, 
+		#1b1b1b 50px, #1b1b1b calc(100% - 50px), #fff);
+	content: "";
 	height: 100%;
 	position: absolute;
+	width: 6px;
+
 	left: 50%;
 	margin-left: -3px;
-	padding: 5px;
 }
 
 .timelineElement {
@@ -182,14 +186,14 @@ header {
 	font-size: large;
 }
 
-.timelineElement:nth-child(2n+1) .timelineElementContentContainer {
+.timelineElement:nth-child(2n) .timelineElementContentContainer {
 	padding-right: 2.5em;
 	padding-left: 4.5em;
 	margin-right: 0px;
 	margin-left: 50%;
 }
 
-.timelineElement:nth-child(2n+1) .timelineElementContent {
+.timelineElement:nth-child(2n) .timelineElementContent {
 	text-align: left;
 	padding: 1.6em;
 	margin-right: 7em;
@@ -198,7 +202,7 @@ header {
 	box-shadow: 0px 3px 1px -2px rgba(0,0,0,.2),0px 2px 2px 0px rgba(0,0,0,.14),0px 1px 5px 0px rgba(0,0,0,.12);
 }
 
-.timelineElement:nth-child(2n+1) .timelineDate {
+.timelineElement:nth-child(2n) .timelineDate {
 	margin-right: 3em;
 	text-align: right;
 	float: left;
@@ -207,10 +211,10 @@ header {
 }
 
 @media only screen and (max-width: 850px) {
-	.timelineElementContent, .timelineElement:nth-child(2n+1) .timelineElementContent {
+	.timelineElementContent, .timelineElement:nth-child(2n) .timelineElementContent {
 	}
 
-	.verticalLine {
+	.timeline::before {
 		left: auto;
 		right: 4em;
 	}
@@ -220,17 +224,19 @@ header {
 		right: 2.3em;
 	}
 
-	.timelineDate, .timelineElement:nth-child(2n+1) .timelineDate {
+	.timelineDate, .timelineElement:nth-child(2n) .timelineDate {
 		left: auto;
 		right: 7em;
 		margin: 0;
+		max-width: 79px;
+		text-align: center;
 	}
 
-	.timelineElementContentContainer, .timelineElement:nth-child(2n+1) .timelineElementContentContainer {
+	.timelineElementContentContainer, .timelineElement:nth-child(2n) .timelineElementContentContainer {
 		width: auto;
 		padding: 0em;
 		margin: 2em;
-		margin-right: 10em;
+		margin-right: 7.6em;
 	}
 }
 
