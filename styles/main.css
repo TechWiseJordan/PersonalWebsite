@@ -209,6 +209,9 @@ header {
 
 @media only screen and (max-width: 850px) {
 	.timelineElementContent, .timelineElement:nth-child(2n) .timelineElementContent {
+		margin-left: 0;
+		margin-right: 7em;
+		max-width: 34em;
 	}
 
 	.timeline::before {
