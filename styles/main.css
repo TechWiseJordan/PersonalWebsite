@@ -207,7 +207,11 @@ header {
 	right: 50%;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1170px) {
+	.timeline {
+		padding-top: 0.1px;
+	}
+
 	.timelineElementContent, .timelineElement:nth-child(2n) .timelineElementContent {
 		margin-left: 0;
 		margin-right: 7em;
