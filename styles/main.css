@@ -175,9 +175,9 @@ header {
 	margin-left: 3em;
 	text-align: left;
 	opacity: 0.8;
-	padding-top: 1.2em;
+	padding-top: 1.0em;
 	padding-bottom: 1.2em;
-	font-size: large;
+	font-size: 1.2em;
 }
 
 .timelineElement:nth-child(2n) .timelineElementContentContainer {
