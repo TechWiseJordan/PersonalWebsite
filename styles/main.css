@@ -1,9 +1,9 @@
 body {
 	/* Setting the default text color, size, page background and a font stack: */
-	font-size:1em;
-	color:#fcfcfc;
-	background-color:#145f7f;
-	font-family:Arial, sans-serif;
+	font-size: 16px;
+	color: #fcfcfc;
+	background-color: #145f7f;
+	font-family: Arial, sans-serif;
 	background-image: url(../images/CircuitBoard1.jpg);
 	background-attachment: fixed;
 	min-height: 100%;
@@ -55,7 +55,7 @@ h1,h2,h3 {
 }
 
 h1 {
-	font-size:3.5em;
+	font-size:3em;
 }
 
 h2 {
@@ -78,8 +78,8 @@ header {
 	top: 0;
 	right: 0;
 	left: 0;
-	padding: 0.9em;
-	padding-left: 1.5em;
+	padding: 0.7em;
+	padding-left: 1.2em;
 	background-color: #212121;
 	z-index: 1;
 }
@@ -100,7 +100,7 @@ header {
 	color: #333333;
 	margin: 0;
 	padding: 30px 120px 30px 120px;
-	font-size: 1.2em;
+	/*font-size: 1.2em;*/
 }
 
 .profilePicture {
@@ -209,6 +209,24 @@ header {
 	padding-bottom: 4em;
 }
 
+
+/* Footer styling */
+footer {
+	margin: 0px;
+	text-align: left;
+	font-size: 1.2em;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding: 30px 120px 15px 120px;
+}
+
+	footer p {
+		position: relative;
+		margin: 0px;
+	}
+
+
 @media only screen and (max-width: 1170px) {
 	.timeline {
 	}
@@ -247,19 +265,51 @@ header {
 	}
 }
 
+@media only screen and (max-width: 667px) {
+	.aboutMe {
+		padding: 30px 30px 30px 30px;
+	}
 
-/* Footer styling */
-footer {
-	margin: 0px;
-	text-align: left;
-	font-size: 1.2em;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	padding: 30px 120px 15px 120px;
-}
 
-footer p {
-	position:relative;
-	margin: 0px;
+	.timeline {
+	}
+
+	.timelineElementContent, .timelineElement:nth-child(2n) .timelineElementContent {
+		margin-left: 0;
+		margin-right: 3.5em;
+		max-width: 34em;
+	}
+
+	.timeline::before {
+		left: auto;
+		right: 2em;
+	}
+
+	.timelineElementIcon {
+		left: auto;
+		right: 0.6em;
+	}
+
+	.timelineDate, .timelineElement:nth-child(2n) .timelineDate {
+		left: auto;
+		right: 4em;
+		margin: 0;
+		padding: 0;
+		padding-top: 0.2em;
+		max-width: 100px;
+		text-align: center;
+	}
+
+	.timelineElementContentContainer, .timelineElement:nth-child(2n) .timelineElementContentContainer {
+		width: auto;
+		padding: 0em;
+		margin-left: 1em;
+		margin-right: 7.6em;
+	}
+
+
+	/* Footer styling */
+	footer {
+		padding: 30px 30px 15px 30px;
+	}
 }
